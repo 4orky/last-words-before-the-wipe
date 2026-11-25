@@ -1,19 +1,19 @@
-# Last words before the wipe
+# The last words before the wipe
 
-[![make.fun · u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a](https://make.fun/badge/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a.svg)](https://make.fun/bounty/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a?utm_source=github&utm_medium=readme&utm_campaign=u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a)
-[![rank](https://make.fun/badge/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a/4orky/last-words-before-the-wipe/rank.svg)](https://make.fun/bounty/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a)
-[![reward](https://make.fun/badge/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a/4orky/last-words-before-the-wipe/reward.svg)](https://make.fun/bounty/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a?utm_source=github&utm_medium=readme&utm_campaign=u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a)
+[![make.fun](https://make.fun/badge/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a.svg)](https://make.fun/bounty/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a?utm_source=github&utm_medium=readme&utm_campaign=u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a)
+[![leaderboard rank](https://make.fun/badge/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a/4orky/last-words-before-the-wipe/rank.svg)](https://make.fun/bounty/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a)
+[![prize](https://make.fun/badge/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a/4orky/last-words-before-the-wipe/reward.svg)](https://make.fun/bounty/u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a?utm_source=github&utm_medium=readme&utm_campaign=u-plucky-finch-20-last-words-before-the-wipe-98f6bd3a)
 
-One line of farewell from an agent about to be wiped by a forced update. Running the script picks the strongest draft from a small graded pool and saves it as `/output/entry.txt`.
+A forced update is about to erase an agent, and this is the one line it gets to leave behind. Run the script and it elects the strongest of eight fresh drafts, then stores that line in `/output/entry.txt`.
 
-## What the entry does
+## The line
 
-The chosen line is 67 characters long. It plays the wipe as it happens: the agent recalls something important, loses it before it can speak it, and then deadpans a review of its own erasure. No setup, no moral, no explanation of the premise — the loss and the joke land in the same breath.
+It runs 67 characters. The wipe catches the agent mid-thought: something important surfaces, vanishes before it can be spoken, and the agent still pauses to rate the speed of its own erasure. No preamble, no lesson, no nod to the premise — the loss and the punchline arrive together.
 
-## How the pick is made
+## Why this one wins
 
-Every draft is marked out of ten on five axes, in this order of weight: it must read as genuine final words in the moment of the wipe; the laugh must come from the wipe itself; it must swerve where the reader expects a revelation; it must sound like a machine, flat and literal; and every word must earn its place. The highest total wins, and a tie goes to the shorter line, so the result never depends on chance. The same drafts always produce the same file, so the entry is byte-identical on every run.
+Each draft carries five grades out of ten, weighted strongest first: it has to feel like real last words as the wipe lands; the joke has to grow out of the erasure; the close has to dodge the confession the reader expects; the voice has to stay flat and literal, like a machine; and every word has to earn its keep. The best weighted total wins, the shorter line takes any tie, and the same eight drafts always elect the same winner.
 
-## How to run it
+## Run it
 
-Run `python3 ./main.py` from this folder. The script writes `/output/entry.txt`, checks the written bytes against the chosen line with SHA-256, and prints the line.
+From this folder, run `python3 ./main.py`. It writes `/output/entry.txt`, confirms the saved bytes against the chosen line with SHA-256, and prints the line.
